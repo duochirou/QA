@@ -25,7 +25,7 @@ class QaPipeline(object):
 class JsonWriterPipeline(object):
 
     def open_spider(self, spider):
-        self.file = open('items_solved.jl', 'w', encoding='utf-8')
+        self.file = open('qa.jl', 'w', encoding='utf-8')
 
     def close_spider(self, spider):
         self.file.close()
